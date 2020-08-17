@@ -1,0 +1,78 @@
+<section id="ofertas" class="pt-5">
+  <div class="">
+    <div class="container">
+      <h1 class="h2-lead mt-5 mb-3 text-center"><span class="b-09">{{ item.titulo }}</span></h1>
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+          <select class="browser-default custom-select select mb-4 form-control" (change)="onRegiao($event)">
+            <option value="1">PARANÁ</option>
+            <option value="3">PARANÁ - NORTE</option>
+            <option value="2">SANTA CATARINA</option>
+          </select>
+        </div>
+        <div class="col-md-6 col-lg-5">
+          <select class="browser-default custom-select select mb-4 form-control" (change)="onLojas($event)">
+            <option value="" selected>Selecione a Loja</option>
+            <option *ngFor="let item of lojas" [value]="item.slug" class="text-uppercase">
+              {{ item.nome | uppercase }}
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-4">
+        <div class="col-md-10">
+          <input type="text" class="form-control" placeholder="O que está procurando?" (change)="onSearch($event)" />
+        </div>
+      </div>
+      <!-- <h2 class="titulo2 pt-md-4"><span>{{ nameLoja.nome }}</span></h2> -->
+    </div>
+  </div>
+  <div class="container pt-4">
+    <div class="row">
+      <div class="col-lg-3 mb-3" id="product">
+        <div class="mb-3 text-center">
+          <a [href]="delivery.link" target="_blank" class="btn btn-compra rounded-pill z-depth-2">
+            <h5 class="mb-0 px-2 py-1">
+              <span class="float-left">
+                <img [src]="delivery.icon" width="30px" class="mr-2" alt="">
+              </span>
+              <span class="position-relative" style="line-height: 1.1;">
+                {{ delivery.text }}
+              </span>
+            </h5>
+          </a>
+        </div>
+        <div class="bg-filtro rounded px-2 py-3 z-depth-2">
+          <h4 class="pb-1 border-bottom mb-3 px-1 b-08 text-center departamento-text">
+            Departamentos
+            <span class="float-right d-lg-none" (click)="toogle()">
+              <i class="fas" [ngClass]="{'fa-plus': !active, 'fa-minus': active}"></i>
+            </span>
+          </h4>
+          <ul class="nav flex-column d-lg-block" [ngClass]="{'d-none': !active}">
+            <li class="nav-item nav-depart">
+              <a class="nav-link" (click)="Produtos(nameLoja.cod_loja, item.campanha)">Todos</a>
+            </li>
+            <li class="nav-item nav-depart" *ngFor="let f of menu">
+              <a class="nav-link" (click)="getDepartamento(nameLoja.cod_loja, item.campanha, f.codigo)">
+                {{ f.departamento }}</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-9">
+        <div class="row">
+          <div id="product" class="col-6 col-lg-4 col-xl-4 mb-2"
+            *ngFor="let code of shops | filtro: search: 'dsc_produto' | paginate: { itemsPerPage: 6, currentPage: p }">
+            <app-product [code]="code"></app-product>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center py-4">
+      <pagination-controls class="animated fade text-center mt-5 border-top pt-1" (pageChange)="p = $event"
+        screenReaderPaginationLabel="Pagination" autoHide="true" responsive="true" screenReaderPageLabel="page"
+        screenReaderCurrentLabel="" previousLabel="Anterior" nextLabel="Próximo"></pagination-controls>
+    </div>
+  </div>
+</section>

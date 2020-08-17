@@ -1,0 +1,233 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'Geller Headline';
+    src: local('GellerHeadline.otf'), url('./fontes/fontsweb/GellerHeadline-Black.otf'), format('otf');
+  }
+  
+  @font-face {
+    font-family: 'Geller Headline';
+    font-style: bold;
+    /* font-weight: ; */
+    src: url('./fontes/fontsweb/GellerHeadline-Black.otf'); /* IE9 Compat Modes */
+    src: local('Geller Headline'), local('GellerHeadline'),
+         url('./fontes/fontsweb/GellerHeadline-Black.otf') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fontes/fontsweb/GellerHeadline-Black.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fontes/fontsweb/GellerHeadline-Black.woff') format('woff'), /* Modern Browsers */
+         url('./fontes/fontsweb/GellerHeadline-Black.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fontes/fontsweb/GellerHeadline-Black.svg') format('svg'); /* Legacy iOS */
+  }
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: url('../src/assets/images/bg.png') no-repeat right bottom;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Geller Headline';
+    font-weight: bold;
+}
+
+@mixin bolder($number) {
+    font-weight: $number !important;
+}
+
+// Font-weight
+.b-02 {
+    @include bolder(200);
+}
+
+.b-03 {
+    @include bolder(300);
+}
+
+.b-04 {
+    @include bolder(400);
+}
+
+.b-05 {
+    @include bolder(500);
+}
+
+.b-06 {
+    @include bolder(600);
+}
+
+.b-07 {
+    @include bolder(700);
+}
+
+.b-08 {
+    @include bolder(800);
+}
+
+.b-09 {
+    @include bolder(900);
+}
+
+
+.btn-condor {
+    color: rgb(223, 223, 223) !important;
+    font-weight: 700;
+    background-color: #28a745 !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+}
+
+.btn-assistir {
+    color: rgb(223, 223, 223) !important;
+    font-weight: 700;
+    background-color: #db4019 !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+}
+
+.btn-compra {
+    color: rgb(255, 255, 255) !important;
+    font-weight: 700;
+    background-color: #28a745 !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .5);
+}
+
+.navbar {
+    background: #28a745 !important;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0), 0 0px 0px 0 rgba(0, 0, 0, 0) !important;
+
+    a {
+        color: #fff !important;
+    }
+}
+
+@media(max-width: 800px) {
+    .navbar {
+        background: #28a745 !important;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+    }
+}
+
+
+.nav-item {
+    text-transform: uppercase;
+    margin: 0 5px;
+
+    a {
+        color: #fff !important;
+        font-weight: 800 !important;
+        font-size: 1.2rem;
+        text-shadow: 1px 1px 2px rgba($color: #000000, $alpha: .3);
+    }
+}
+
+.nav-item:hover,
+.nav-item.active {
+    background: #40be46;
+    border-radius: 5px;
+    -webkit-box-shadow: -3px 8px 5px -3px rgba(0, 0, 0, 0.3);
+    box-shadow: -3px 8px 5px -3px rgba(0, 0, 0, 0.3);
+
+    a {
+        color: #fff !important;
+        font-weight: 800 !important;
+    }
+}
+
+.top-nav-collapse {
+    background: #004800 !important;
+
+    .nav-item {
+        a {
+            color: #fff !important;
+        }
+    }
+
+    mdb-navbar-brand {
+        .logo {
+            img {
+                opacity: 1 !important;
+            }
+        }
+    }
+}
+
+
+.carousel .carousel-control-prev-icon,
+.carousel .carousel-control-next-icon {
+    width: 40px !important;
+    height: 40px !important;
+    padding: 5px 20px 0 0px;
+    background: #de002e;
+    border-radius: 50%;
+}
+
+.carousel-control-next {
+    right: -100px
+}
+
+.carousel-control-prev {
+    left: -100px
+}
+
+#header {
+
+    .carousel-control-next {
+        right: -50px
+    }
+
+    .carousel-control-prev {
+        left: -50px
+    }
+}
+
+.carousel-indicators {
+    bottom: -30px
+}
+
+.carousel-indicators li {
+    background-color: rgba($color: #247ff0, $alpha: .7);
+}
+
+
+@media(max-width: 1024px) {
+    .carousel-control-next {
+        right: 0px
+    }
+
+    .carousel-control-prev {
+        left: 0px
+    }
+
+    .carousel .carousel-control-prev-icon,
+    .carousel .carousel-control-next-icon {
+        position: absolute;
+        bottom: 15px !important;
+    }
+
+    .carousel-indicators {
+        bottom: -50px
+    }
+}
+
+
+.ngx-pagination a,
+.ngx-pagination button {
+    color: #fff !important;
+    display: block;
+    padding: 0.1875rem 0.625rem;
+    border-radius: 0;
+}
+
+.ngx-pagination .current {
+    padding: 0.1875rem 0.625rem;
+    background: #5c0216 !important;
+    border-radius: 50%;
+    color: #fefefe;
+    cursor: default;
+    text-shadow: 4px 4px 4px rgba($color: #000000, $alpha: .35);
+}
+
+.navbar-toggler-icon {
+    display:  !important;
+}
+
+

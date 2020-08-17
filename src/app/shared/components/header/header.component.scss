@@ -1,0 +1,131 @@
+header {
+    background: url('../../../../assets/images/bg.png') no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+    background: url('../../../../assets/images/bg_leticia.png') no-repeat;
+    background-position: bottom;
+    background-position-x: 120%;
+    background-position-y: 700px;
+    background-size: 60%;
+}
+
+img{  max-width: 100%; }
+.btn {
+  width: 100%;
+  border-radius: 25px;
+  margin: 0 auto !important;
+}
+
+.textdecor {
+  width: 50%;
+}
+
+.clique {
+  color: #28a745;
+    font-family: 'Geller Headline';
+    padding: 0px;
+}
+
+.produtosqualidade {
+  color:#af6438; 
+  font-family:'Geller Headline';
+  padding: 30px;
+}
+
+.img1circulo {
+  z-index: 10;
+  top: 300px;
+  position: absolute;
+  float: left;
+  left: 125px;
+}
+
+.aumentaenergia {
+    background-color: #af6438; 
+    width: 100%;
+    color:white; 
+    padding: 130px 30px 30px 30px; 
+    position: relative; 
+    margin-top: 220px;
+    margin-bottom: 120px;
+}
+
+.leticia {
+  width: 85%;
+  margin-top: 60px;
+}
+
+.leticia1 {
+  display: none;
+}
+
+
+@media (min-width: 1200px) {
+  
+  .logo-ms{
+    width: 60%;
+    margin: 0 auto !important;
+  }
+  .logo-kv{
+    width: 60%;
+    margin: 0 auto !important;
+  }
+  .text-img{
+    width: 80%;
+    margin: 0 auto !important;
+  }
+  .btn-kv-right{
+    width: 80%;
+    font-size: 2rem !important;
+  }
+  .btn{
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  header {
+    background: url('../../../../assets/images/bg_leticia.png') no-repeat;
+    background-position-x: 500px;
+    background-position-y: 800px;
+    background-size: 90%;
+}
+  .img1circulo {
+    top: 380px;
+    left: 80px;
+  }
+
+  .leticia {
+    width: 120%;
+    margin-top: 130px;
+  }
+}
+
+@media (max-width: 991px) {
+
+  header {
+    background: url('../../../../assets/images/bg_leticia.png') no-repeat center;
+    background-position-y: 800px;
+    background-size: 100%;
+}
+
+  .img1circulo {
+      visibility: hidden;
+  }
+
+  .leticia {
+    display: none;
+  }
+
+  .leticia1 {
+      display: inline;
+      width: 50%;
+      margin: 30px 0px;
+  }
+
+  .aumentaenergia {
+    margin-top: 0px;
+    padding-top: 30px;
+}
+} 

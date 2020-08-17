@@ -1,0 +1,15 @@
+<mdb-card>
+    <div class="view rgba-white-slight waves-light" mdbWavesEffect>
+        <mdb-card-img appLazyLoad [src]="post.medium"
+          alt="{{ post.title }}">
+        </mdb-card-img>
+        <a href="https://www.condor.com.br/blog/{{ post.slug }}" target="_blank">
+            <div class="mask"></div>
+        </a>
+    </div>
+    <mdb-card-body>
+        <mdb-card-title>
+            <h5 class="b-07">{{ post.title }}</h5>
+        </mdb-card-title>
+    </mdb-card-body>
+</mdb-card>

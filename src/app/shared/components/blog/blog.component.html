@@ -1,0 +1,15 @@
+<section id="blog" class="py-5">
+    <div class="container">
+        <h1 class="h2-lead mb-5 text-center"><span class="b-09">{{ item.titulo }}</span></h1>
+        <div class="row justify-content-center ios mb-4">
+            <div *ngFor="let p of posts$" class="col-12 col-md-6 col-lg-{{ item.col}} mb-4 container-blog">
+                <app-post [post]="p"></app-post>
+            </div>
+        </div>
+        <div class="text-center">
+            <a [href]="item.link" target="_blank" class="btn btn-condor rounded-pill z-depth-2">
+                <h6 class="mb-0 text-uppercase b-08 py-1 px-3"> {{ item.buttom }} </h6>
+            </a>
+        </div>
+    </div>
+</section>

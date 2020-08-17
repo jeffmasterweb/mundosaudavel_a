@@ -1,0 +1,12 @@
+<main *ngIf="(items | async) as item">
+  <app-menu [item]="item['menu']"></app-menu>
+  <app-header [item]="item['header']"></app-header>
+  <app-formulario [item]="item['participar']"></app-formulario>
+  <app-ofertas [item]="item['ofertas']"></app-ofertas>
+  <!-- <app-faq [item]="item['faq']"></app-faq> -->
+  <app-blog [item]="item['blog']"></app-blog>
+  <app-footer [item]="item['footer']"></app-footer>
+</main>
+
+
+

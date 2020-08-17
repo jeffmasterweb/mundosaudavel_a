@@ -1,0 +1,19 @@
+<mdb-navbar SideClass="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar intro-fixed-nav"
+[containerInside]="true">
+<mdb-navbar-brand>
+    <a class="logo navbar-brand" href="{{ item['url'] }}" target="_blank">
+        <img [src]="item['img']" class="img-fluid logo" alt="{{ item['alt'] }}">
+    </a></mdb-navbar-brand>
+    <links>
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item nav-aulas" *ngFor="let i of item['source']">
+              <ng-template [ngIf]="i.status">
+                <a class="nav-link waves-light" *ngIf="!i.external"
+                [ngxScrollTo]="i.url" mdbWavesEffect>{{ i.name }}</a>
+                <a class="nav-link waves-light" *ngIf="i.external"
+                href="{{i.url}}" target="_blank" mdbWavesEffect>{{ i.name }}</a>
+              </ng-template>
+            </li>
+        </ul>
+    </links>
+</mdb-navbar>

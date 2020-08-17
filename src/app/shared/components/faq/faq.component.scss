@@ -1,0 +1,27 @@
+section {
+  background: #ff8218;
+}
+
+
+.h2-lead{
+  letter-spacing: -2px;
+  margin-top: 0px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 4px 4px 4px rgba($color: #000000, $alpha: .35);
+}
+
+
+.content {
+  border-radius: 5px;
+  display: block;
+  background-color: #fff;
+  padding: 1rem 2rem;
+  height: 600px;
+  overflow-y: scroll;
+  div{
+    height: 100%;
+  }
+}

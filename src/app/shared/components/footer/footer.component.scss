@@ -1,0 +1,94 @@
+
+footer{
+    position: relative;
+    background:#40be46;
+}
+
+.legal{
+    background: #fa483c;
+}
+
+.logo-condor {
+    width: 180px;
+}
+
+.circle{
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    padding: .54rem 1.3rem;
+    font-size: .81rem;
+    transition: .2s ease-in-out;
+    margin: .375rem;
+    border: 0;
+    border-radius: .125rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.btn-circle {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.2);
+    color: #fff !important;
+    border-radius: 20px;
+    text-align: center;
+    i {  margin-left: -5px; margin-top: 5px; }
+}
+
+@media (max-width: 1024px) {
+    .logo-condor {
+        width: 130px;
+    }
+    .btn-circle {
+        width: 35px;
+        height: 35px;
+        i {  margin-left: -5px; }
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-condor {
+        width: 130px;
+    }
+    .btn-circle {
+        width: 35px;
+        height: 35px;
+        i {  margin-left: -6px; }
+    }
+}
+
+
+@media (max-width: 450px) {
+    .logo-condor {
+        width: 130px;
+    }
+    .btn-circle {
+        width: 35px;
+        height: 35px;
+        i {  margin-left: -6px; }
+    }
+}
+
+@media (max-width: 375px) {
+    .btn-circle {
+        width: 35px;
+        height: 35px;
+        i { margin-left: -6px; }
+    }
+}
+
+@media (max-width: 320px) {
+    .btn-circle {
+        width: 30px;
+        height: 35px;
+        border-radius: 50%;
+        line-height: 2 !important;
+        i {
+        margin-left: -6px;
+        font-size: 0.8rem;
+        }
+    }
+}

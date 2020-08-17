@@ -1,0 +1,22 @@
+.clube-banner {
+    background: linear-gradient(
+        0deg, rgba(220, 13, 5, 0) 97%, 
+        rgba(220, 13, 5, 1) 97%), 
+        linear-gradient(to right, #016798, #01c6fb, #016798
+    );
+}
+
+
+.titulo{
+    color: #fff;
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, .5);
+}
+
+@media(max-width: 450px) {
+    h3 {
+        font-size: 1.5rem;
+    }
+}

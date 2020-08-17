@@ -1,0 +1,110 @@
+[
+  {
+    "menu": {
+      "img": "./assets/images/logo.png",
+      "alt": "Rede Condor",
+      "url": "https://www.condor.com.br",
+      "source": [
+        {
+          "status": true,
+          "url": "#beneficios",
+          "name": "benefícios",
+          "external": false
+        },
+        {
+        "status": true,
+        "url": "#participar",
+        "name": "receitas",
+        "external": false
+        },
+        {
+        "status": true,
+        "url": "#ofertas",
+        "name": "ofertas",
+        "external": true
+        },
+        {
+        "status": false,
+        "url": "#faq",
+        "name": "duvidas",
+        "external": false
+        },
+        {
+          "status": true,
+          "url": "#blog",
+          "name": "blog",
+          "external": false
+        }
+      ]
+    },
+    "header": {
+      "centro": "./assets/images/logoms.png",
+      "textdecor":"./assets/images/text_decor.png",
+      "leticia":"./assets/images/leticia.png",
+      "img1circulo":"./assets/images/img1.png",
+      "textdecor2":"./assets/images/text_decor2.png",
+      "left": {
+        "logo": "./assets/images/logo-kv.png",
+        "textBtn": "ver ofertas com dinheiro de volta",
+        "urlBtn": "#ofertas",
+        "youtube": "https://www.youtube.com/embed/ghAUL-8EiLg"
+      },
+      "right": {
+        "img1": "/assets/images/title.png",
+        "img1Alt": "Muita ferta, descontos e creditos",
+        "img2": "/assets/images/familia.png",
+        "img2Alt": "Familia Condor",
+        "urlBtn": "https://clubecondor.com",
+        "txtBtn": "ver extrato e saldo"
+      }
+    },
+    "participar": {
+      "titulo": "como participar",
+      "legal": "Clique <a href='' target='_blank'>aqui</a> e confira o regulamneto completo.",
+      "source": ["passo1.png", "passo2.png", "passo3.png"],
+      "urlBtn": "https://clubecondor.com",
+      "txtBtn": "ver meu saldo"
+    },
+    "ofertas": {
+      "compre": {
+        "link": "https://www.condor.com.br/delivery/index.html",
+        "text": "Compre on-line",
+        "icon": "./assets/images/market.svg"
+      },
+      "titulo": "Ofertas para uma vida mais saudável",
+      "campanha": "270340"
+    },
+    "app": {
+      "image": "./assets/images/clube.png",
+      "alt": "Participe e economize ainda mais.",
+      "url": "https://promocoescondor.com.br",
+      "iconsText": "E acesse",
+      "icons": "./assets/images/icons.png",
+      "titulo": "BAIXE O APLICATIVO",
+      "app": "./assets/images/app_store.png",
+      "altApp": "Baixar na App Store",
+      "urlApp": "https://apps.apple.com/br/app/clube-condor/id1453391822",
+      "play": "./assets/images/play_store.png",
+      "urlPlay": "https://play.google.com/store/apps/details?id=br.com.gsgroup.zoombox.condorsupermercados"
+    },
+    "faq": {
+      "titulo": "dúvidas?",
+      "slug": 2892
+    },
+    "blog": {
+      "titulo": "Blog Condor",
+      "buttom": "Ver tudo",
+      "link": "http://www.condor.com.br/blog/categoria/bem-estar/",
+      "tag": 0,
+      "cant": 3,
+      "col": 4
+    },
+    "footer": {
+      "title": "@Condor 2020. Todos os direitos reservados.",
+      "fb": "https://www.facebook.com/RedeCondor/",
+      "ig": "https://www.instagram.com/redecondor/",
+      "tw": "https://twitter.com/RedeCondor",
+      "yt": "https://www.youtube.com/user/redecondor"
+    }
+  }
+]

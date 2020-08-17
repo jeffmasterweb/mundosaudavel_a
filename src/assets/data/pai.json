@@ -1,0 +1,37 @@
+[
+    {
+        "img": "./assets/images/type/01.png",
+        "title": "MODERNO",
+        "text": "Se o seu pai adora <b>tecnologia</b> e estar antenado com o <b>mundo digital</b> e jovem, então os produtos do <b>Eletro Condor</b> são ideais para ele: <b>celular/smartphone</b>, <b>notebook</b>, <b>tablet</b>, <b>Smart TV 4K</b>, <b>rádio</b>, <b>fones de ouvido</b>, <b>barbeador elétrico</b> e muito mais.",
+        "buttom": "Ver produtos",
+        "link": "https://www.condor.com.br/departamento/eletro"
+  },
+    {
+        "img": "./assets/images/type/02.png",
+        "title": "FITNESS",
+        "text": "<b>Esporte</b>, <b>atividade física</b> e <b>hábitos saudáveis</b> fazem parte da rotina do seu pai? Então ele vai adorar os produtos do <b>Mundo Saudável Condor</b> e <b>Bazar Condor</b>: <b>bicicletas</b>, <b>bolas</b>, <b>bermudas</b>, <b>camisetas</b>, <b>tênis</b>, <b>bonés</b>, <b>garrafinhas e canecas térmicas</b>, <b>barracas</b>, <b>colchão inflável</b> e diversas outras opções.",
+        "buttom": "Ver produtos",
+        "link": "https://www.condor.com.br/departamento/bazar"
+  },
+    {
+        "img": "./assets/images/type/03.png",
+        "title": "CHEF DE COZINHA",
+        "text": "O seu pai <b>ama pilotar o fogão ou a churrasqueira</b> de casa para preparar pratos e churrascos deliciosos para toda a família? Então ele vai amar os utensílios e produtos do <b>Bazar Condor</b> e <b>Eletro Condor</b>: <b>panelas</b>, <b>conjunto de copos e taças</b>, <b>tábuas</b>, <b>kit churrasco</b>, <b>conjunto de facas</b>, <b>churrasqueira elétrica</b> e muitas outras opções.",
+        "buttom": "Ver produtos",
+        "link": "https://www.condor.com.br/departamento/alimentos"
+  },
+    {
+        "img": "./assets/images/type/04.png",
+        "title": "ESTILOSO",
+        "text": "<b>Moda</b>, <b>estilo</b>, <b>bom gosto</b> e <b>conforto</b> são palavras que representam o seu pai? Então temos dicas incríveis para você arrasar no presente deste ano com as opções do <b>Têxtil Condor</b>: <b>calça</b>, <b>camiseta</b>, <b style='white-space: nowrap'>camisa-polo</b>, <b>casaco</b>, <b>jaqueta</b>, <b>roupão</b>, <b>pijama</b>, <b>moletom</b>, <b>pantufa</b>, <b>chinelo</b>, <b>sapato</b> e <b>tênis</b>.",
+        "buttom": "Ver produtos",
+        "link": "https://www.condor.com.br/departamento/textil"
+  },
+    {
+        "img": "./assets/images/type/05.png",
+        "title": "ANIMADO",
+        "text": "<b>Animação</b> é a palavra-chave que define o seu pai? Se ele adora deixar os momentos especiais e repletos de <b>bons drinks para brindar a vida</b>, então ele vai adorar as bebidas da <b>Adega Condor</b>. Temos diversas opções em <b>vinhos</b>, <b>espumantes</b>, <b>cervejas</b>, <b>rum</b>, <b>tequila</b>, <b>gin</b>, <b>cachaça</b> e <b>vodca</b> para presenteá-lo em grande estilo.",
+        "buttom": "Ver produtos",
+        "link": "https://www.condor.com.br/departamento/bebidas"
+  }
+]

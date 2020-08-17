@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Churrasqueira Mor",
+        "img": "./assets/slider/img1.png",
+        "url": "https://www.condor.com.br/produto/bazar/churrasco/churrasqueira-mor-368539"
+  },
+    {
+        "title": "Jaqueta masculina Gran Bazar",
+        "img": "./assets/slider/img2.png",
+        "url": "#ofertas"
+  },
+    {
+        "title": "Kit Mondial",
+        "img": "./assets/slider/img3.png",
+        "url": "#ofertas"
+   },
+    {
+        "title": "Ferramentas Tramontina",
+        "img": "./assets/slider/img4.png",
+        "url": "https://www.condor.com.br/produto/bazar/ferragens-e-ferramentas/kit-de-ferramentas-tramontina-1810266"
+},
+    {
+        "title": "Celular Samsung Galaxy A11",
+        "img": "./assets/slider/img5.png",
+        "url": "#ofertas"
+}
+]

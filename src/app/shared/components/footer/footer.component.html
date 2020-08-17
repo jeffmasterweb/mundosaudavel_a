@@ -1,0 +1,37 @@
+<footer id="footer" class="py-2">
+    <div class="container">
+        <div class="row ios justify-content-between">
+            <div class="col-12 col-md-4 col-lg-3">
+                <a href="">
+                    <img src="./assets/images/logo.png" alt="Rede Condor" class="img-fluid mt-1 mb-2 mx-auto d-block" />
+                </a>
+            </div>
+            <div class="col-md-6 d-none d-lg-block">
+            <p class="text-center b-05 mt-2 mb-0 white-text">
+             {{ item.title }}
+            </p>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+            <div class="d-flex flex-row justify-content-center">
+                <a [href]="item.fb" class="circle btn-circle mb-0">
+                <i class="fab fa-facebook-f"></i>
+                </a>
+                <a [href]="item.ig" target="_blank" class="circle btn-circle mb-0 mx-2">
+                <i class="fab fa-instagram"></i>
+                </a>
+                <a [href]="item.tw" target="_blank" class="circle btn-circle mb-0 mr-2">
+                <i class="fab fa-twitter"></i>
+                </a>
+                <a [href]="item.yt" target="_blank" class="circle btn-circle mb-0">
+                <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            </div>
+            <div class="col-12 d-lg-none">
+            <p class="text-center b-05 mt-4 f-09 white-text">
+              {{ item.title }}
+            </p>
+            </div>
+        </div>
+    </div>
+</footer>

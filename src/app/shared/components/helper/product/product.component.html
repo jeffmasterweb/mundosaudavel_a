@@ -1,0 +1,55 @@
+<a [href]="link" target="_blank">
+  <div class="price-card">
+      <div class="light-border"></div>
+      <div class="img-container zoom" [ngClass]="{'text-left pl-0': code.dsc_kit}">
+          <div class="flex-center" [ngClass]="{ 'd-none': !active }">
+              <div class="spinner-grow" role="status">
+                  <span class="sr-only">Loading...</span>
+              </div>
+          </div>
+          <img [src]="imagem" alt="{{ product.dsc_produto }}" width="auto" height="100%" />
+          <div class="pack" *ngIf="code.dsc_kit"><img _ngcontent-serverapp-c23="" alt="Tag Clube Condor" class="" src="https://www.condor.com.br/assets/images/clube.png">{{ code.dsc_kit | truncate: 25 }}</div>
+      </div>
+      <div class="card-content">
+          <p class="name text-uppercase">{{ product.dsc_produto | truncate: 24 }}</p>
+          <div class="description mt-3">
+              <span>{{ product.dsc_descricao | truncate: 30 }}</span>
+          </div>
+          <p class="mb-0 mt-2 b-04 f-09" [hidden]="!code.qtd_clube && !code.preco_clube">
+              {{ code.preco_regular | currency: "R$":"symbol":"1.2-2":"pt" }}
+              <span class="b-04" style="font-size: .7rem; text-shadow: initial !important;">{{product.embalagem }}</span>
+          </p>
+          <div class="azul" *ngIf="!code.qtd_clube && !code.preco_clube">
+              <h2 class="mt-4">
+                  {{ code.preco_regular | currency: "R$":"symbol":"1.2-2":"pt" }}
+                  <span>{{product.embalagem }}</span></h2>
+          </div>
+          <div class="valor parcelamento">
+              <div class="tag" [ngClass]="{'sem-clube': code.preco_clube === '0.00'}">
+                  <img src="./assets/images/clube2.png" alt="Tag Clube Condor" class="mx-auto d-block">
+              </div>
+              <div class="laranja" *ngIf="code.qtd_clube">
+                  <p>
+                      <span>{{ code.qtd_clube }}x</span> de<br>
+                      <span class="parcela">{{ code.parcela_clube | currency: "R$":"symbol":"1.2-2":"pt" }}</span>
+                  </p>
+              </div>
+              <div class="azul" *ngIf="code.qtd_clube && code.preco_clube">
+                  <p>Ou à vista</p>
+                  <h2>
+                      {{ code.preco_clube | currency: "R$":"symbol":"1.2-2":"pt" }}
+                      <span>{{product.embalagem }}</span></h2>
+              </div>
+              <div class="azul" *ngIf="!code.qtd_clube && code.preco_clube > '0.00'">
+                  <h2 class="mt-4">
+                      {{ code.preco_clube | currency: "R$":"symbol":"1.2-2":"pt" }}
+                      <span>{{product.embalagem }}</span></h2>
+              </div>
+          </div>
+          <span class="validade mt-2">
+              Oferta Válida de {{ product.start | date: "dd/MM/yyyy" }} a {{ product.end | date: "dd/MM/yyyy" }}
+          </span>
+      </div>
+  </div>
+
+</a>

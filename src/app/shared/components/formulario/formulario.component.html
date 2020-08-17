@@ -8,32 +8,25 @@
                             
           <div>
                 <div class="receita-inverno" >
-                    <h1>Receitas de sopas low carb para o inverno</h1>
+                    <h1 [innerHTML]="item.titulo"></h1>
                 </div>
           </div>
 
+            <div class="col-lg-6 text-center img-fluid">
+              <img src="./assets/images/sopaleticia.jpg" alt="" class="sopaleticia2"/>
+            </div>
 
           <div>
-              <div class="receita-texto">
-
-                  <p>s simply dummy text of the printing and typesetting 
-                  industry. Lorem Ipsum has been the industry's standard 
-                  dummy text ever since the 1500s, when an unknown printer 
-                  took a galley of type and scrambled it to make a type specimen 
-                  book. It has survived not only five centuries, but also the leap 
-                  into electronic typesetting, remaining essentially unchanged. It 
-                  was popularised in the. Lorem Ipsum has been the industry's standard 
-                  dummy text ever since the 1500s, when an unknown printer 
-                  took a galley of type and scrambled it to make a type specimen 
-                  book. It has survived not only </p>
+              <div class="receita-texto text-left">
+                  <p [innerHTML]="item.texto"></p>
               </div>
           </div>
 
       </div>
 
         <div class="col-lg-6 text-center">
-
-      </div>
+              <img src="./assets/images/sopaleticia.jpg" alt="" class="sopaleticia"/>
+        </div>
     
   </div>
 
@@ -59,7 +52,7 @@
     </div>
 </section> -->
 
-<section class="fundobg pt-5">
+<section class="fundobg mt-4 mb-4">
   <div class="container">
     <div class="vermais text-center">
       <a [href]="item.link" target="_blank" class="btn rounded-pill z-depth-2">

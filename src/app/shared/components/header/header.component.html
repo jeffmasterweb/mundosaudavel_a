@@ -1,47 +1,38 @@
 <header id="beneficios">
 
-    <div class="bgleticia">
-      <img src="" alt="" />
-    </div>
+    
+      <img src="" alt="" class="bgleticia"/>
+    
 
     <div class="container-lg py-4">
-
-        <div class="row justify-content-center fluid py-4">
-          <img [src]="item['centro']" alt="" class="logo-ms pt-4 px-3">
-        </div>
 
         <div class="row justify-content-center fluid">
 
             <div class="col-12 col-lg-6 col-xl-6 text-center img-fluid">
-              
-              <h1 class="produtosqualidade justify-content-center text-center">Produtos de Qualidade de uma vida mais saudável.</h1>
-                <img [src]="item['textdecor']" alt="" class="textdecor"/>
+
+                <img src="./assets/images/logoms.png" alt="" class="logo-ms pt-4 px-3">
+                <h1 class="produtosqualidade justify-content-center text-center">Produtos de Qualidade de uma vida mais saudável.</h1>
+                <img src="./assets/images/text_decor.png" alt="" class="textdecor"/>
                 <h3 class="clique">Clique nos pontos para ver os benefícios de uma alimentação saudável</h3>
 
 
                 <div class="col-12 col-lg-6 col-xl-6 text-center img-fluid">
-                  <img [src]="item['leticia']" alt="" class="leticia1"/>  
-              </div>
+                  <img src="./assets/images/leticia.png" alt="" class="leticia1"/>  
+                </div>
 
-                <img [src]="item['img1circulo']" alt="" class="img1circulo text-center"/>
+                <img [src]="item['image']" alt="" class="img1circulo text-center"/>
                 
                 
                   <div class="aumentaenergia">
-                      <h3 class="text-white">Aumenta a energia</h3>
-                        <img [src]="item['textdecor2']" alt="" class="textdecor2 py-3 img-fluid" />
-                        <p class="white-text mb-0">is simply dummy text of the printing and typesetting 
-                        industry. Lorem Ipsum has been the industry's standard 
-                        dummy text ever since the 1500s, when an unknown printer 
-                        took a galley of type and scrambled it to make a type specimen 
-                        book. It has survived not only five centuries, but also the leap 
-                        into electronic typesetting, remaining essentially unchanged. It 
-                        was popularised in the.</p>
+                      <h3 class="text-white" [innerHTML]="item.titulo?.titulo1"></h3>
+                        <img src="./assets/images/text_decor2.png" alt="" class="textdecor2 py-3 img-fluid" />
+                        <p class="white-text mb-0 text-left" [innerHTML]="item.texto?.texto1"></p>
                   </div>
 
             </div>
 
             <div class="col-lg-6 text-center img-fluid">
-                <img [src]="item['leticia']" alt="" class="leticia"/>  
+                <img src="./assets/images/leticia.png" alt="" class="leticia"/>  
             </div>
           
         </div>

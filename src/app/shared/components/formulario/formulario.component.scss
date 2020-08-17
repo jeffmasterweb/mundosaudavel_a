@@ -1,10 +1,19 @@
 #participar{
     background: url('../../../../assets/images/bg2.png') no-repeat top center;
     background-size: cover;
-    height: 400px;
+    height: 100%;
     padding-top: 20px;
+    margin-bottom: 100px;
 }
 
+.sopaleticia {
+  width: 100%;
+  margin-top: 50%;
+}
+
+.sopaleticia2 {
+  display: none;
+}
 
 .h2-lead{
   letter-spacing: -2px;
@@ -44,17 +53,29 @@
   width:100%;
   position:relative;
   color:white;
-  padding:30px;
-  margin-top: 100px;
-}
-
-.fundobg {
-  height: 350px;
+  padding:40px;
+  margin-top: 50px;
 }
 
 .vermais {
-  margin-top: 200px;
   position: relative;
   color: white;
 }
+
+@media (max-width: 991px) {
+
+  .receita-texto {
+    margin-top: 0px;
+  }
+
+  .sopaleticia {
+    display: none;
+  }
+
+  .sopaleticia2 {
+    display: inline-block;
+    width: 100%;
+  }
+
+} 
 

@@ -4,9 +4,9 @@ header {
     background-attachment: fixed;
     background: url('../../../../assets/images/bg_leticia.png') no-repeat;
     background-position: bottom;
-    background-position-x: 120%;
-    background-position-y: 700px;
-    background-size: 60%;
+    background-position-x: 200%;
+    background-position-y: 200%;
+    background-size: 80%;
 }
 
 img{  max-width: 100%; }
@@ -34,38 +34,40 @@ img{  max-width: 100%; }
 
 .img1circulo {
   z-index: 10;
-  top: 300px;
+  top: 43%;
   position: absolute;
   float: left;
-  left: 125px;
+  left: 22%;
 }
 
 .aumentaenergia {
     background-color: #af6438; 
     width: 100%;
     color:white; 
-    padding: 130px 30px 30px 30px; 
+    padding: 180px 30px 30px 30px; 
     position: relative; 
-    margin-top: 220px;
+    margin-top: 200px;
     margin-bottom: 120px;
 }
 
 .leticia {
-  width: 85%;
-  margin-top: 60px;
+  width: 100%;
+  margin-top: 55px;
 }
 
 .leticia1 {
   display: none;
 }
 
+.logo-ms {
+  width: 100%;
+  margin-top: 30px;
+  padding: 0px;
+}
+
 
 @media (min-width: 1200px) {
   
-  .logo-ms{
-    width: 60%;
-    margin: 0 auto !important;
-  }
   .logo-kv{
     width: 60%;
     margin: 0 auto !important;
@@ -87,18 +89,17 @@ img{  max-width: 100%; }
 
   header {
     background: url('../../../../assets/images/bg_leticia.png') no-repeat;
-    background-position-x: 500px;
-    background-position-y: 800px;
-    background-size: 90%;
+    background-position-x: 350px;
+    background-position-y: 170%;
+    background-size: 100%;
 }
   .img1circulo {
-    top: 380px;
-    left: 80px;
+    top: 44%;
+    left: 16%;
   }
 
   .leticia {
-    width: 120%;
-    margin-top: 130px;
+    margin-top: 150px;
   }
 }
 
@@ -119,7 +120,7 @@ img{  max-width: 100%; }
   }
 
   .leticia1 {
-      display: inline;
+      display: inline-block;
       width: 50%;
       margin: 30px 0px;
   }
@@ -127,5 +128,12 @@ img{  max-width: 100%; }
   .aumentaenergia {
     margin-top: 0px;
     padding-top: 30px;
+    margin-bottom: 30px;
 }
+
+  .logo-ms{
+    margin-top: 30px;
+    width: 80%;
+  }
+
 } 

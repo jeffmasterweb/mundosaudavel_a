@@ -38,32 +38,26 @@
       ]
     },
     "header": {
-      "centro": "./assets/images/logoms.png",
-      "textdecor":"./assets/images/text_decor.png",
-      "leticia":"./assets/images/leticia.png",
-      "img1circulo":"./assets/images/img1.png",
-      "textdecor2":"./assets/images/text_decor2.png",
-      "left": {
-        "logo": "./assets/images/logo-kv.png",
-        "textBtn": "ver ofertas com dinheiro de volta",
-        "urlBtn": "#ofertas",
-        "youtube": "https://www.youtube.com/embed/ghAUL-8EiLg"
-      },
-      "right": {
-        "img1": "/assets/images/title.png",
-        "img1Alt": "Muita ferta, descontos e creditos",
-        "img2": "/assets/images/familia.png",
-        "img2Alt": "Familia Condor",
-        "urlBtn": "https://clubecondor.com",
-        "txtBtn": "ver extrato e saldo"
-      }
+      "image":"./assets/images/img1.png",
+      "titulo":{
+          "titulo1":"Aumenta a energia",
+          "titulo2":"Aumenta a energia",
+          "titulo3":"Aumenta a energia",
+          "titulo4":"Aumenta a energia",
+          "titulo5":"Aumenta a energia"
+        },
+      "texto": {
+          "texto1":"<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
+          "texto2":"<p>Texto teste do box, texto teste do box texto teste da caixa</p>",
+          "texto3":"<p>Texto teste do box, texto teste do box texto teste do cesto</p>",
+          "texto4":"<p>Texto teste do box, texto teste do box texto teste do wwwwwww</p>",
+          "texto5":"<p>Texto teste do box, texto teste do box texto teste do yyyyyyyy</p>"
+        }
     },
     "participar": {
-      "titulo": "como participar",
-      "legal": "Clique <a href='' target='_blank'>aqui</a> e confira o regulamneto completo.",
-      "source": ["passo1.png", "passo2.png", "passo3.png"],
-      "urlBtn": "https://clubecondor.com",
-      "txtBtn": "ver meu saldo"
+      "titulo": "<h1>Receitas de sopas low carb para o inverno</h1>",
+      "texto": "<p><b>Ingredientes:</b><p/><ul><li>500 g de ervilhas secas.</li><li>200 g de bacon picado (opcional).</li><li>2 litros de água.</li><li>1 cebola pequena picada.</li><li>4 dentes de alho amassados.</li><li>2 colheres (sopa) de azeite de oliva.</li><li>Sal, pimenta-do-reino e cheiro-verde a gosto.</li></ul><p><b>Modo de preparo:</b></p><p>Em uma panela de pressão, aqueça o azeite e refogue a cebola. Acrescente o alho amassado e deixe fritar mais um pouco. Coloque as ervilhas e refogue rapidamente. Despeje água e tempere com sal e pimenta-do-reino. Tampe a panela e deixe cozinhar por cerca de 20 minutos depois que pegar a pressão.</p><p>Enquanto isso, se optar pelo bacon, frite-o em uma panela com um pouco de azeite e reserve.</p><p>Coloque a sopa e o bacon no liquidificador e bata tudo até ficar bem homogêneo. Para finalizar, você pode acrescentar cheiro-verde à sopa.</p>",
+      "image": "./assets/images/sopaleticia.jpg"
     },
     "ofertas": {
       "compre": {

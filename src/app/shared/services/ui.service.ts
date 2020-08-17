@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { tap, map, retry } from 'rxjs/operators';
+import { tap, map, retry, mapTo } from 'rxjs/operators';
 import { environment } from 'src/environments/environment.prod';
 import { Post } from './post.interface';
 import { Image } from './image.interface';
@@ -22,7 +22,7 @@ export class UiService {
 
   private Query<T>(query: string) {
     query = url + query;
-    return this.http.get<T>(query).pipe(tap(data => data));
+    return this.http.get<T>(query).pipe(map(data => data));
   }
 
   getSetting(slug: string = lp): Observable<Setting[]> {

@@ -4,7 +4,7 @@
     font-family: 'Geller Headline';
     src: local('GellerHeadline.otf'), url('./fontes/fontsweb/GellerHeadline-Black.otf'), format('otf');
   }
-  
+
   @font-face {
     font-family: 'Geller Headline';
     font-style: bold;
@@ -21,7 +21,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: url('../src/assets/images/bg.png') no-repeat right bottom;
+    background: url('../src/assets/images/bg.png') no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -225,9 +225,4 @@ h1,h2,h3,h4 {
     cursor: default;
     text-shadow: 4px 4px 4px rgba($color: #000000, $alpha: .35);
 }
-
-.navbar-toggler-icon {
-    display:  !important;
-}
-
 
